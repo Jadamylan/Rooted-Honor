@@ -1,4 +1,5 @@
 # Rooted Honor — The Day We Honor
+Demo Video: https://youtube.com/shorts/2_OXw068_fs?si=_lxvHkHBB2xQ8ZZR
 
 A remembrance-day landing page MVP. *“Honor your elders. Keep them in the room.”*
 The featured example is **Watermelon Patch Day** — held **every August 3, in honor of Grandpa**.
