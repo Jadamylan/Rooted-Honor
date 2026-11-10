@@ -23,19 +23,6 @@ npm start            # or: node server.js
 # → http://localhost:3000
 ```
 
-## Configure OpenRouter (Patch Dispatch)
-
-The API key lives **only on the server** (`server.js`). Never put it in frontend code or commit it.
-
-1. Copy `.env.example` to `.env` and fill in:
-
-   ```
-   OPENROUTER_API_KEY=your_openrouter_key_here
-   # Optional — default in server.js is the exact Muse Ember slug:
-   OPENROUTER_MODEL=meta/muse-ember
-   PORT=3000
-   ```
-
 2. Restart the server. The model identifier is one clearly labeled server-side constant, `MUSE_EMBER_MODEL`, in `server.js`. Override it via `OPENROUTER_MODEL` only if your OpenRouter configuration uses a different exact slug — do not guess slugs.
 
 Without a key, the Dispatch feature shows setup help plus a labeled sample (this is intentional, so the demo never fakes a model call).
@@ -62,10 +49,3 @@ Without a key, the Dispatch feature shows setup help plus a labeled sample (this
 ## Privacy notes
 
 Offerings, RSVPs, and pledges are stored only in **local browser storage** on this demo. No accounts, no analytics, no payment provider. Push freely to GitHub — `.env` is gitignored.
-
-## 60-second demo script
-
-1. Scroll to the ofrenda → add an offering (notice the celebratory confirmation).
-2. RSVP → show the Google Calendar + `.ics` buttons.
-3. Toggle ES / FR → everything translates instantly.
-4. Hit **Create this year’s Patch Dispatch** → live recap from your offerings (or the labeled sample if unconfigured).
